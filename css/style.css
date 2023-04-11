@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  margin: 0 auto;
+  transition: all;
+  transition-duration: 500ms;
+  transition-property: all;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.wrap {
+  display: inline-block;
+  margin: 0 40px 20px 0;
+  background: rgba(228, 225, 228, 0.5);
+}
+
+.one,
+.two,
+.three,
+.four {
+  background: rgba(191, 38, 247, 0.736);
+}
+
+.five,
+.six {
+  background-color: orange;
+}
+
+/* CSS-переходи (властивість transition) */
+
+.one:hover {
+  background-color: darkcyan;
+}
+
+.two:hover {
+  background-color: rgba(143, 235, 137, 0.874);
+}
+
+/*CSS-трансформації (властивість transform)  */
+
+.three:hover {
+  transform: translateX(-20px);
+}
+
+.four:hover {
+  transform: translateY(20px);
+}
+
+.five:hover {
+  background-color: brown;
+  transform: rotate(360deg);
+}
+
+.six:hover {
+  background-color: rgb(165, 42, 134);
+  transform: scaleX(1.5);
+}
